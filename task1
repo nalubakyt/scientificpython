@@ -1,0 +1,89 @@
+from random import seed
+from random import randint
+import numpy as np
+#1task
+
+print("task 1")
+
+A = np.zeros(10)
+A[4] = 1
+print (A)
+
+#2-3task
+
+print("task 2-3")
+
+B = np.arange(10,50)
+print (B)
+B[0] = B[-1] + B[0]
+B[-1] = B[0] - B[-1]
+B[0] = B[0] - B[-1]
+print(B)
+
+#4task
+
+print("task 4")
+
+C = np.arange(0,9)
+C = C.reshape(3,3)
+print (C)
+
+#5task
+
+print("task 5")
+
+d = [1,2,0,0,4,0]
+for i in d:
+	if (i != 0):
+		print (i)
+
+#6task
+print("task 6")
+
+F = np.random.random((3,3,3))
+print(F)
+
+
+#7task
+print("task 7")
+V = np.random.random((10,10))
+a, b = V.min(), V.max()
+print("min is:",a, "max is:",b)
+
+#8task
+
+print("task 8")
+
+A = np.random.random(30)
+print(A)
+n = A.mean()
+print(n)
+
+#10task
+
+print("task 10")
+
+A = np.zeros((8,8),dtype=int)
+A[1::2,::2] = 1
+A[::2,1::2] = 1
+print(A)
+
+#11task
+print("task 11")
+V = np.random.random((5,5))
+a,b = V.max(), V.min()
+V = (V-a)/(b-a)
+print(V)
+
+
+
+#14task
+print("task 14")
+V = np.zeros((5,5))
+V += np.arange(5)
+print(V)
+
+#15task
+print("task15")
+A = np.linspace(0,1,12,endpoint=True)[1:-1]
+print(A)
